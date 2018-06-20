@@ -1,12 +1,13 @@
 // Seet up mysql connection
 const mysql = require("mysql");
+require('dotenv').config();
 
-const connection = mysql.createConnection({
+let connection = mysql.createConnection({
     host: process.env.DB_HOST,
     port:  process.env.DB_PORT,
     user:  process.env.DB_USER,
     password:  process.env.DB_PASSWORD,
-    port:  "todo_db"
+    database:  "todo_db"
 });
 
 // Start Connection 
