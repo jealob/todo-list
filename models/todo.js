@@ -14,7 +14,7 @@ const todo = {
         });
     },
     update: function (colVals, condition, callback) {
-        orm.update("tasks", colVals, condiditon, function (res) {
+        orm.update("tasks", colVals, condition, function (res) {
             callback(res);
         });
     },
