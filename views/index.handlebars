@@ -6,14 +6,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-3 mb-2 ml-0 mx-auto rounded uncomplete">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 py-3 mb-2 ml-0 mx-auto rounded uncomplete">
                 <h2 class="text-center">Uncompleted Task!</h2>
 
                 <p>
                     {{#each tasks}} {{#unless complete}} {{> tasks/task-block complete=true}} {{/unless}} {{/each}}
                 </p>
             </div>
-            <div class=" col-lg-5 col-md-5 col-sm-12 col-xs-12 py-3 mb-2 ml-5 mx-auto rounded complete">
+            <div class=" col-lg-5 col-md-12 col-sm-12 col-xs-12 py-3 mb-2 ml-5 mx-auto rounded complete">
                 <h2 class="text-center">Completed Task!</h2>
 
                 <p>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="row add-task rounded mb-3">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 py-3 mb-2 mx-auto text-center my-2 mx-auto">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 py-3 mb-2 mx-auto text-center my-2 mx-auto">
                 <h2>Add a Task</h2>
                 <form class="create-form">
 
