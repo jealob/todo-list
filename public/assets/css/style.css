@@ -8,18 +8,13 @@
 
       .footer {
           /* height: 50px; */
-          background: #d7dbb1;
+          background: #c9ce9f;
       }
 
   .label {
     font-weight: bold;
   }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
+   */
   
   .form-group {
     margin-bottom: 5px;
@@ -44,17 +39,13 @@
   }
 
   .complete {
-    background:#669966;
+    background:#5ebd1e;
   }
 
   .add-task {
-    background:#d18e18
+    background:#e29d26
   }
 
  h2 {
-    color:white
-  }
-
-  hr {
     color:white
   }

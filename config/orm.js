@@ -1,4 +1,4 @@
-// orm.js is used to setup Object relational map
+// orm.js is used to setup Object relational mapper
 // that is to setup query to the database 
 
 // import sql connection from connection.js in config folder

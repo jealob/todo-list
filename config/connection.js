@@ -22,7 +22,7 @@ connection.connect(function (err) {
         console.error("error connection: " + err.stack);
         return;
     }
-    console.log("connected as id " + connection.threadId)
+    // console.log("connected as id " + connection.threadId);
 });
 //Exports to ORM
 module.exports = connection;

@@ -3,6 +3,13 @@
 const express = require("express");
 const task = require("../models/todo.js");
 const router = express.Router();
+// Import handlebars helper module package
+const hbs = require('handlebars');
+
+// Create helper function to add one a value. To be use in displaying the list of task in task-block.hanldebars 
+hbs.registerHelper('plusone', (val, opts) =>{
+    return parseInt(val) + 1;
+  });
 
 // Create the routes
 // get route/  Read
@@ -11,7 +18,7 @@ router.get("/", function (req, res) {
         let hbsObject = {
             tasks: data
         };
-        console.log(hbsObject);
+        // console.log(hbsObject);
         res.render("index", hbsObject);
     });
 });
@@ -29,9 +36,7 @@ router.post("/api/tasks", function (req, res) {
 // Put Route /Update
 router.put("/api/tasks/:id", function (req, res) {
     let condition = "id = " + req.params.id;
-
-    console.log("condition", condition);
-
+    // console.log("condition", condition);
     task.update({
         complete: req.body.complete
     }, condition, function (result) {
