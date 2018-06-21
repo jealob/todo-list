@@ -1,9 +1,14 @@
-<li>
-	{{task}}
+<div>
+	<div class="index">{{plusone @index}}.</div>
+	<div class="task-display">
+		{{task}}
+	</div>
+	<div class="button-display">
+		<button class="change-complete rounded" data-id="{{id}}" data-newcomplete="{{complete}}">
+			{{#if complete}}Completed!{{else}}To-Do!{{/if}}
+		</button>
 
-	<button class="change-complete" data-id="{{id}}" data-newcomplete="{{complete}}">
-		{{#if complete}}Completed Task!{{else}}To-Do Task!{{/if}}
-	</button>
-
-	<button class="delete-task" data-id="{{this.id}}">Delete!</button>
-</li>
+		<button class="delete-task rounded" data-id="{{this.id}}">Delete!</button>
+	</div>
+</div>
+<hr>

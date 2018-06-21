@@ -1,9 +1,16 @@
-li {
-    padding: 5px;
-    margin: 5px;
-    /* background: #faebd7; */
-  }
-  
+        /* https://css-tricks.com/snippets/css/sticky-footer/ */
+
+        /* Sticky Footer with calc()*/
+
+        .wrapper {
+          min-height: calc(100vh - 50px);
+      }
+
+      .footer {
+          /* height: 50px; */
+          background: #d7dbb1;
+      }
+
   .label {
     font-weight: bold;
   }
@@ -17,4 +24,37 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
-  
+  .index {
+    display: inline-block;
+  }
+  .task-display{
+    display: inline-block;
+    max-width:60%;
+    /* float: left; */
+  }
+
+  .button-display{
+    display: block;
+    float: right;
+  }
+
+
+  .uncomplete {
+    background:#fe8585
+  }
+
+  .complete {
+    background:#669966;
+  }
+
+  .add-task {
+    background:#d18e18
+  }
+
+ h2 {
+    color:white
+  }
+
+  hr {
+    color:white
+  }

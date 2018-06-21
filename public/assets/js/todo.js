@@ -37,7 +37,7 @@ $(function () {
             data: newTask
         }).then(
             function () {
-                console.log("created new cat");
+                console.log("created new task");
                 // Reload the page to get the updated list
                 location.reload();
             }
