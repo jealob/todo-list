@@ -8,4 +8,4 @@ To Do List is a full-stack application, it utilizies REpresentational State Tran
 * express
 * express-handlebars
 * mysql
-App is hosted on github pages on [here](https://jealobtodolist.herokuapp.com/).
+App is hosted on [here](https://jealobtodolist.herokuapp.com/).
