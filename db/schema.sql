@@ -7,4 +7,6 @@ CREATE TABLE tasks
 	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	task varchar(255) NOT NULL,
 	complete BOOLEAN DEFAULT false
+	createdAt TIMESTAMP NOT NULL,
+	PRIMARY KEY(id)
 );
